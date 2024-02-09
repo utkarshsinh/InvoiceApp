@@ -1,18 +1,32 @@
+# Invoicing Application for Desert Media Group
 ### Objective
 
-Your challenge is to build out this invoicing application for Desert media group's accounting department and get it looking as close to the design as possible.
+The challenge is to build out an invoicing application for Desert Media Group's accounting department, focusing on functionality over pixel-perfect implementation of design. The application is built using TypeScript and React, catering to desktop users with no responsiveness required.
 
 ### Brief
 
-Using TypeScript and React, your task is to build out the project to the design files provided in the `/designs` folder. The functionality outlined in **Expected Behaviour** is more important than implementing the designs pixel-perfect. You are only supposed to build out the desktop version of the assignment and it does not need to be responsive.
+To get started with the project, ensure you have Node.js installed. Then, clone the repository and run the following commands:
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+```
+# Install dependencies
+npm install
 
-The design system file will give you more information about the various colors, fonts, and styles used in this project.
+# Compiles and hot-reloads for development
+npm run serve
 
-We provide the data in a local `data.json` file, so use that to populate the content on first load.
+# Compiles and minifies for production
+npm run build
 
-### Tasks
+```
+
+### Tasks and Expected Behaviour
+
+- **CRUD Operations:** Users can create, read, update, and delete invoices. Invoices can be saved as drafts or as pending.
+- **Invoice ID Generation:** Each new invoice gets a unique ID consisting of 2 random uppercase letters followed by 4 random numbers.
+- **Form Validation:** The "Save & Send" action requires all form fields to be filled, whereas "Save as Draft" allows for blank fields.
+- **Payment Due Date:** The due date is calculated based on the invoice creation date plus the payment terms.
+- **Total Calculation:** Invoice totals are calculated as the sum of all items on the invoice.
+- **Status Updates:** Invoices can be marked as paid, updating their status accordingly.
 
 - Implement assignment using:
   - Language: **TypeScript**
