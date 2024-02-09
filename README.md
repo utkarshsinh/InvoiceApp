@@ -40,6 +40,9 @@ npm install firebase
 - Dynamic due dates based on payment terms
 - Summation of item totals for invoice total
 
+### Landing Page
+![image](https://github.com/utkarshsinh/InvoiceApp/assets/107430204/16638f6c-f41c-4dcb-aa5a-4f573824c747)
+
 
 
 ### Bonus (Not Implemented)
@@ -53,6 +56,9 @@ npm install firebase
 
 - The designs provided in the /designs folder serve as a guideline. This project focuses on functionality.
 - The application uses data from a local data.json file for initial content population.
+
+### Demo
+
 
 ### Contribution
 
