@@ -17,6 +17,9 @@ npm run serve
 # Compiles and minifies for production
 npm run build
 
+# Install firebase (Version 8 or lower)
+npm install firebase
+
 ```
 
 ### Tasks and Expected Behaviour
@@ -28,43 +31,28 @@ npm run build
 - **Total Calculation:** Invoice totals are calculated as the sum of all items on the invoice.
 - **Status Updates:** Invoices can be marked as paid, updating their status accordingly.
 
-- Implement assignment using:
-  - Language: **TypeScript**
-  - Framework: **React**
+### Features
 
-Your users should be able to:
+- Hover states for interactive elements
+- Draft and pending status for invoices
+- Dynamic due dates based on payment terms
+- Summation of item totals for invoice total
 
-- See hover states for all interactive elements on the page
-- Create, read, update, and delete invoices
 
-### Expected Behaviour
 
-- Creating an invoice
-  - When creating a new invoice, an ID needs to be created. Each ID should be 2 random uppercased letters followed by 4 random numbers.
-  - Invoices can be created either as drafts or as pending. Clicking "Save as Draft" should allow the user to leave any form field blank but should create an ID if one doesn't exist and set the status to "draft". Clicking "Save & Send" should require all forms fields to be filled in, and should set the status to "pending".
-  - Changing the Payments Terms field should set the `paymentDue` property based on the `createdAt` date plus the numbers of days set for the payment terms.
-  - The `total` should be the sum of all items on the invoice.
-- Editing an invoice
-  - When saving changes to an invoice, all fields are required when the "Save Changes" button is clicked. If the user clicks "Cancel", any unsaved changes should be reset.
-  - If the invoice being edited is a "draft", the status needs to be updated to "pending" when the "Save Changes" button is clicked. All fields are required at this stage.
-- Users should be able to mark invoices as paid by clicking the "Mark as Paid" button. This should change the invoice's status to "paid".
-- **Bonus**: Users should receive a confirmation modal when trying to delete invoices.
-- Feel free not to add custom styling for the date and dropdown form fields. The designs for those fields are optional extras and are mostly for illustration purposes.
+### Bonus (Not Implemented)
 
-### Evaluation Criteria
+- Adherence to TypeScript best practices
+- Functional completeness and correctness
+- Clean, maintainable code structure
+- Adequate testing of the system
 
-- **TypeScript** best practices
-- Show us your work through your commit history
-- We're looking for you to produce working code with enough room to demonstrate how to structure components in a small program
-- Completeness: did you complete the features?
-- Correctness: does the functionality act in sensible, thought-out ways?
-- Maintainability: is it written in a clean, maintainable way?
-- Testing: is the system adequately tested?
+### Notes
 
-### CodeSubmit
+- The designs provided in the /designs folder serve as a guideline. This project focuses on functionality.
+- The application uses data from a local data.json file for initial content population.
 
-Please organize, design, test, and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
+### Contribution
 
-**Have fun building!** 🚀
+Feel free to fork the project and submit pull requests for any improvements or bug fixes. Ensure to maintain the code structure.
 
-The Desert media group Team
