@@ -1,4 +1,6 @@
 # Invoicing Application for Desert Media Group
+![image](https://github.com/utkarshsinh/InvoiceApp/assets/107430204/e7aca09c-8b82-463a-bd17-abead7b77d2e)
+
 ### Objective
 
 The challenge is to build out an invoicing application for Desert Media Group's accounting department, focusing on functionality over pixel-perfect implementation of design. The application is built using TypeScript and React, catering to desktop users with no responsiveness required.
@@ -54,5 +56,9 @@ npm install firebase
 
 ### Contribution
 
-Feel free to fork the project and submit pull requests for any improvements or bug fixes. Ensure to maintain the code structure.
+Feel free to fork the project and submit pull requests for improvements or bug fixes. Ensure to maintain the code structure.
 
+### Future Work
+
+- Implement Log in functionality
+- Enhancing refined search based on the status of invoice(Paid, Draft, Pending)
